@@ -37,9 +37,18 @@ export default function AboutScreen() {
 
             if (response.ok) {
                 setMahasiswa(data);
+            } else {
+                Alert.alert(
+                    'Data Tidak Ditemukan',
+                    `NIM ${NIM_USER} tidak ditemukan di database. Silakan cek kembali data mahasiswa.`
+                );
             }
+
         } catch (error) {
-            console.log('Gagal mengambil data mahasiswa', error);
+            Alert.alert(
+                'Error',
+                'Gagal mengambil data mahasiswa dari server.'
+            );
         }
     };
 
