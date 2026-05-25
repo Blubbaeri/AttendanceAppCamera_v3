@@ -1,0 +1,58 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+/ios
+/android
+.kotlin/
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+
+# .NET / C#
+**/bin/
+**/obj/
+**/App_Data/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Visual Studio / VS Code
+.vs/
+.vscode/
+*.swp
+*.lck
+.idea/
+
+# SQLite / Databases
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# debug & logs
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+*.log
+.metro-health-check*
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# local env files
+.env*.local
